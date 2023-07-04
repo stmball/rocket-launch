@@ -8,8 +8,8 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: absolute;
-    left: calc(200px - 30px);
-    top: calc(200px - 50px);
+    left: calc(50% - 30px);
+    top: calc(50% - 50px);
     height: 100px;
     width: 60px;
 }
@@ -18,10 +18,12 @@
     position: relative;
     height: 100px;
     width: 60px;
+    transition: all 1s ease-in;
 }
 
 .earth {
     height: 400px;
+    margin: 0 auto;
 }
 
 @keyframes rocket_in_orbit {
