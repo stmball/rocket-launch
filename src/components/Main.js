@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Confetti from 'react-confetti';
+import yay from '../img/yeah.wav';
 import Rockets from './Rockets';
 
 export default function Main() {
@@ -12,6 +13,7 @@ export default function Main() {
     const [score, setScore] = React.useState(0);
     const [confetti, setConfetti] = React.useState([]);
 
+    const howl = new Audio(yay);
 
     const THRESHOLD = 100.0;
 
@@ -19,7 +21,7 @@ export default function Main() {
         e.preventDefault();
 
         if (launchProgress + parseFloat(score) >= THRESHOLD) {
-            triggerConfetti();
+            triggerConfetti(launches);
             let num_launches_to_add = Math.floor((launchProgress + parseFloat(score)) / THRESHOLD);
             setLaunches(launches + num_launches_to_add);
             setLaunchProgress(launchProgress + parseFloat(score) - THRESHOLD * num_launches_to_add);
@@ -29,10 +31,11 @@ export default function Main() {
         setScore(0);
     }
 
-    const triggerConfetti = () => {
-        setConfetti([...confetti, <Confetti run={true} recycle={false} />]);
-        if (confetti.length > 1) {
-            setConfetti(confetti.pop());
+    const triggerConfetti = (launches) => {
+        howl.play();
+        setConfetti([...confetti, <Confetti run={true} recycle={false} key={launches} />]);
+        if (confetti.length > 2) {
+            setConfetti(confetti.slice(1));
         }
     }
 

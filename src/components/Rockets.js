@@ -36,7 +36,7 @@ export default function Rockets({ launches, launchProgress }) {
     return (
         <Container>
             <Row style={{ marginTop: "5rem" }}>
-                <Col md={10}>
+                <Col sm={10}>
                     <div className='rocket_container'>
                         {rockets}
                         <img src={earth} alt='earth' className="rounded d-block earth" />
