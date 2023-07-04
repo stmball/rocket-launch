@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.f542ff6f.css",
-    "main.js": "/static/js/main.96890923.js",
-    "static/js/787.cb4392fb.chunk.js": "/static/js/787.cb4392fb.chunk.js",
-    "index.html": "/index.html",
-    "main.f542ff6f.css.map": "/static/css/main.f542ff6f.css.map",
-    "main.96890923.js.map": "/static/js/main.96890923.js.map",
-    "787.cb4392fb.chunk.js.map": "/static/js/787.cb4392fb.chunk.js.map"
+    "main.css": "/rocket-launch/static/css/main.f542ff6f.css",
+    "main.js": "/rocket-launch/static/js/main.cfcac493.js",
+    "static/js/787.cb4392fb.chunk.js": "/rocket-launch/static/js/787.cb4392fb.chunk.js",
+    "index.html": "/rocket-launch/index.html",
+    "main.f542ff6f.css.map": "/rocket-launch/static/css/main.f542ff6f.css.map",
+    "main.cfcac493.js.map": "/rocket-launch/static/js/main.cfcac493.js.map",
+    "787.cb4392fb.chunk.js.map": "/rocket-launch/static/js/787.cb4392fb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f542ff6f.css",
-    "static/js/main.96890923.js"
+    "static/js/main.cfcac493.js"
   ]
 }
