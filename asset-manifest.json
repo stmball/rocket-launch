@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/rocket-launch/static/css/main.de5aa77c.css",
-    "main.js": "/rocket-launch/static/js/main.203dbb0e.js",
+    "main.js": "/rocket-launch/static/js/main.6b6eb811.js",
     "static/js/787.cb4392fb.chunk.js": "/rocket-launch/static/js/787.cb4392fb.chunk.js",
     "static/media/earth.png": "/rocket-launch/static/media/earth.ce792053596764e8872d.png",
+    "static/media/yeah.wav": "/rocket-launch/static/media/yeah.b30ed7f4440ca98ab6d9.wav",
     "static/media/microage_logo.png": "/rocket-launch/static/media/microage_logo.c6250830675206dee5ca.png",
     "static/media/rocket.png": "/rocket-launch/static/media/rocket.1fe8a3f8b3d64490e319.png",
     "index.html": "/rocket-launch/index.html",
     "main.de5aa77c.css.map": "/rocket-launch/static/css/main.de5aa77c.css.map",
-    "main.203dbb0e.js.map": "/rocket-launch/static/js/main.203dbb0e.js.map",
+    "main.6b6eb811.js.map": "/rocket-launch/static/js/main.6b6eb811.js.map",
     "787.cb4392fb.chunk.js.map": "/rocket-launch/static/js/787.cb4392fb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de5aa77c.css",
-    "static/js/main.203dbb0e.js"
+    "static/js/main.6b6eb811.js"
   ]
 }
