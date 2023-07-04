@@ -1,7 +1,7 @@
 {
   "name": "rocket-launch",
   "version": "0.1.0",
-  "domain": "https://stmball.github.io/rocket-launch",
+  "homepage": "https://stmball.github.io/rocket-launch",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
