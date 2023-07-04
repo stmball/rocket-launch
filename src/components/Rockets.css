@@ -1,0 +1,35 @@
+.rocket_container {
+    position: relative;
+    height: 400px;
+}
+
+.rocket_in_orbit {
+    animation-name: rocket_in_orbit;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: calc(200px - 30px);
+    top: calc(200px - 50px);
+    height: 100px;
+    width: 60px;
+}
+
+.rocket_to_launch {
+    position: relative;
+    height: 100px;
+    width: 60px;
+}
+
+.earth {
+    height: 400px;
+}
+
+@keyframes rocket_in_orbit {
+    0% {
+        transform: rotate(0deg) translateX(250px);
+    }
+
+    100% {
+        transform: rotate(-360deg) translateX(250px);
+    }
+}
