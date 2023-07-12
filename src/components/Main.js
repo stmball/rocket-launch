@@ -20,7 +20,7 @@ export default function Main() {
     const handleShow = () => setShowModal(true);
 
 
-    const THRESHOLD = 245166.0;
+    const THRESHOLD = 24516.6;
 
     const add_score = (e) => {
         e.preventDefault();
@@ -60,7 +60,7 @@ export default function Main() {
                     </Button>
                 </Modal.Footer>
             </Modal>
-            <Rockets launches={launches} launchProgress={launchProgress} className="mt-5" />
+            <Rockets launches={launches} launchProgress={launchProgress} threshold={THRESHOLD} className="mt-5" />
             <Form className='d-grid gap-2 mt-5' onSubmit={add_score}>
                 <Form.Control type='number' step='any' placeholder='Enter Score' value={score} onChange={(e) => setScore(e.target.value)} />
                 <Button onClick={add_score}>Add progress</Button>
