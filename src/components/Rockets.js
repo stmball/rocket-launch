@@ -30,7 +30,7 @@ export default function Rockets({ launches, launchProgress }) {
         prevRockets.current = launches;
     }, [launches])
 
-    const launch_y = max_height - (launchProgress / 100) * max_height;
+    const launch_y = max_height - (launchProgress / 245166) * max_height;
 
 
     return (
@@ -52,7 +52,7 @@ export default function Rockets({ launches, launchProgress }) {
                     <h5 className="text-center">Number of rockets in orbit: {launches}</h5>
                 </Col>
                 <Col>
-                    <h5 className="text-center">Current progress to launch {launchProgress}%</h5>
+                    <h5 className="text-center">Current progress to launch {(launchProgress / 245166).toFixed(2)}%</h5>
                 </Col>
 
             </Row>
