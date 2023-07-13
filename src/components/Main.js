@@ -7,7 +7,7 @@ import Confetti from 'react-confetti';
 import yay from '../img/yeah.wav';
 import Rockets from './Rockets';
 
-export default function Main() {
+export default function Main({ showTotalModal, setShowTotalModal }) {
 
     const [launches, setLaunches] = React.useState(0);
     const [launchProgress, setLaunchProgress] = React.useState(0);
@@ -19,8 +19,9 @@ export default function Main() {
     const handleClose = () => setShowModal(false);
     const handleShow = () => setShowModal(true);
 
+    const handleTotalClose = () => setShowTotalModal(false);
 
-    const THRESHOLD = 24516.6;
+    const THRESHOLD = 245166.0;
 
     const add_score = (e) => {
         e.preventDefault();
@@ -56,6 +57,17 @@ export default function Main() {
                 <Modal.Body>Rocket Launched! You win a prize!</Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+            <Modal show={showTotalModal} onHide={handleTotalClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Rocket Launch</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Total newtons lifted so far: {launchProgress + launches * THRESHOLD}</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleTotalClose}>
                         Close
                     </Button>
                 </Modal.Footer>

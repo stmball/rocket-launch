@@ -52,7 +52,7 @@ export default function Rockets({ launches, launchProgress, threshold }) {
                     <h5 className="text-center">Number of rockets in orbit: {launches}</h5>
                 </Col>
                 <Col>
-                    <h5 className="text-center">Current progress to launch {(launchProgress / threshold).toFixed(2)}%</h5>
+                    <h5 className="text-center">Current progress to launch {(launchProgress / threshold * 100).toFixed(2)}%</h5>
                 </Col>
 
             </Row>
